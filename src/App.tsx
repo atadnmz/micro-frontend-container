@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './Home';
 import { Routes, Route } from 'react-router-dom';
-const MicroFrontendA = React.lazy(() => import('Weatherapp/Weatherapp'));
+/* const MicroFrontendA = React.lazy(() => import('Weatherapp/Weatherapp')); */
 const DivingSites = React.lazy(() => import('Divesitesapp/Divesitesapp'));
 
 function App() {
@@ -16,14 +16,14 @@ function App() {
           </React.Suspense>
         }
       ></Route>
-      <Route
+      {/*  <Route
         path="/weather"
         element={
           <React.Suspense fallback={<div>Loading...</div>}>
             <MicroFrontendA />
           </React.Suspense>
         }
-      ></Route>
+      ></Route> */}
     </Routes>
   );
 }

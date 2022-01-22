@@ -37,7 +37,7 @@ module.exports = {
       name: 'container',
       remotes: {
         Divesitesapp:
-          'Divesitesapp@https://kata-micro-frontend/dive-sites-app/build/remoteEntry.js',
+          'Divesitesapp@https://atadnmz.github.io/mf-dive-sites/remoteEntry.js',
       },
       shared: [
         {
@@ -58,5 +58,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'public', 'index.html'),
     }),
+    {
+      apply: (compiler) => {
+        compiler.hooks.done.tap('DonePlugin', (stats) => {
+          console.log('Compile is done !');
+          setTimeout(() => {
+            process.exit(0);
+          });
+        });
+      },
+    },
   ],
 };
