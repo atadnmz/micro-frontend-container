@@ -6,8 +6,10 @@ One of its sub-modules repository is `https://github.com/atadnmz/mf-dive-sites`.
 ## Illustrations
 
 <br/>
+<p>
 <img src="screenshots/main-page.png" width="400px" title="Container initial screen"/>
-<img src="screenshots/dive-sites.png" width="400px" title="Diving sites page"/><br/>
+<img src="screenshots/dive-sites.png" width="400px" title="Diving sites page"/>
+</p><br/>
 <img src="screenshots/remote-entry.png" width="800px" title="Lazy loading remote entry"/><br/>
 
 ## Important Files
